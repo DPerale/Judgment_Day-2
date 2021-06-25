@@ -1,0 +1,329 @@
+Initializing error report...
+ 1   Model (
+ 2      Model_Name  => FPS_RTA_CALCULUS,
+ 3      Model_Date  => 2019-01-01);
+ 5   Processing_Resource (
+ 6           Type 			      => Fixed_Priority_Processor,
+ 7           Name                 => Processor_1,
+ 8           Worst_Context_Switch => 9);
+ 10  Scheduling_Server (
+ 11          Type                    => Fixed_Priority,
+ 12          Name                    => SC1,
+ 13          Server_Sched_Parameters => (
+ 14                  Type        => Fixed_Priority_Policy,
+ 15                  The_Priority    => 10,
+ 16                  Preassigned => No),
+ 17          Server_Processing_Resource  => Processor_1);
+ 18  Scheduling_Server (
+ 19          Type                    => Fixed_Priority,
+ 20          Name                    => SC2,
+ 21          Server_Sched_Parameters => (
+ 22                  Type        => Fixed_Priority_Policy,
+ 23                  The_Priority    => 9,
+ 24                  Preassigned => No),
+ 25          Server_Processing_Resource  => Processor_1);
+ 26  Scheduling_Server (
+ 27          Type                    => Fixed_Priority,
+ 28          Name                    => SC3,
+ 29          Server_Sched_Parameters => (
+ 30                  Type        => Fixed_Priority_Policy,
+ 31                  The_Priority    => 8,
+ 32                  Preassigned => No),
+ 33          Server_Processing_Resource  => Processor_1);
+ 34  Scheduling_Server (
+ 35          Type                    => Fixed_Priority,
+ 36          Name                    => SC4,
+ 37          Server_Sched_Parameters => (
+ 38                  Type        => Fixed_Priority_Policy,
+ 39                  The_Priority    => 7,
+ 40                  Preassigned => No),
+ 41          Server_Processing_Resource  => Processor_1);
+ 42  Scheduling_Server (
+ 43          Type                    => Fixed_Priority,
+ 44          Name                    => SC5,
+ 45          Server_Sched_Parameters => (
+ 46                  Type        => Fixed_Priority_Policy,
+ 47                  The_Priority    => 6,
+ 48                  Preassigned => No),
+ 49          Server_Processing_Resource  => Processor_1);
+ 50  Scheduling_Server (
+ 51          Type                    => Fixed_Priority,
+ 52          Name                    => SC6,
+ 53          Server_Sched_Parameters => (
+ 54                  Type        => Fixed_Priority_Policy,
+ 55                  The_Priority    => 5,
+ 56                  Preassigned => No),
+ 57          Server_Processing_Resource  => Processor_1);
+ 58  Scheduling_Server (
+ 59          Type                    => Fixed_Priority,
+ 60          Name                    => SC7,
+ 61          Server_Sched_Parameters => (
+ 62                  Type        => Fixed_Priority_Policy,
+ 63                  The_Priority    => 4,
+ 64                  Preassigned => No),
+ 65          Server_Processing_Resource  => Processor_1);
+ 66  Scheduling_Server (
+ 67          Type                    => Fixed_Priority,
+ 68          Name                    => SC8,
+ 69          Server_Sched_Parameters => (
+ 70                  Type        => Fixed_Priority_Policy,
+ 71                  The_Priority    => 3,
+ 72                  Preassigned => No),
+ 73          Server_Processing_Resource  => Processor_1);
+ 74  Scheduling_Server (
+ 75          Type                    => Fixed_Priority,
+ 76          Name                    => SC9,
+ 77          Server_Sched_Parameters => (
+ 78                  Type        => Fixed_Priority_Policy,
+ 79                  The_Priority    => 2,
+ 80                  Preassigned => No),
+ 81          Server_Processing_Resource  => Processor_1);
+ 82  Scheduling_Server (
+ 83          Type                    => Fixed_Priority,
+ 84          Name                    => SC10,
+ 85          Server_Sched_Parameters => (
+ 86                  Type        => Fixed_Priority_Policy,
+ 87                  The_Priority    => 1,
+ 88                  Preassigned => No),
+ 89          Server_Processing_Resource  => Processor_1);
+ 90  Operation (
+ 91          Type    => Simple,
+ 92          Name    => C1,
+ 93          Worst_Case_Execution_Time => 577);
+ 94  Operation (
+ 95          Type    => Simple,
+ 96          Name    => C2,
+ 97          Worst_Case_Execution_Time => 1143);
+ 98  Operation (
+ 99          Type    => Simple,
+ 100         Name    => C3,
+ 101         Worst_Case_Execution_Time => 4300);
+ 102 Operation (
+ 103         Type    => Simple,
+ 104         Name    => C4,
+ 105         Worst_Case_Execution_Time => 4187);
+ 106 Operation (
+ 107         Type    => Simple,
+ 108         Name    => C5,
+ 109         Worst_Case_Execution_Time => 21);
+ 110 Operation (
+ 111         Type    => Simple,
+ 112         Name    => C6,
+ 113         Worst_Case_Execution_Time => 1239);
+ 114 Operation (
+ 115         Type    => Simple,
+ 116         Name    => C7,
+ 117         Worst_Case_Execution_Time => 7028);
+ 118 Operation (
+ 119         Type    => Simple,
+ 120         Name    => C8,
+ 121         Worst_Case_Execution_Time => 7755);
+ 122 Operation (
+ 123         Type    => Simple,
+ 124         Name    => C9,
+ 125         Worst_Case_Execution_Time => 4954);
+ 126 Operation (
+ 127         Type    => Simple,
+ 128         Name    => C10,
+ 129         Worst_Case_Execution_Time => 14471);
+ 130 Transaction (
+ 131         Type    => Regular,
+ 132         Name    => T1,
+ 133         External_Events => (
+ 134                 (Type   => Periodic,
+ 135                  Name   => E1,
+ 136                  Period => 15000)),
+ 137         Internal_Events => (
+ 138                 (Type   => regular,
+ 139                  name   => O1,
+ 140                  Timing_Requirements => (
+ 141                          Type             => Hard_Global_Deadline,
+ 142                          Deadline         => 15000,
+ 143                          referenced_event => E1))),
+ 144         Event_Handlers => (
+ 145                 (Type                => Activity,
+ 146                  Input_Event         => E1,
+ 147                  Output_Event        => O1,
+ 148                  Activity_Operation  => C1,
+ 149                  Activity_Server     => SC1)));
+ 150 Transaction (
+ 151         Type    => Regular,
+ 152         Name    => T2,
+ 153         External_Events => (
+ 154                 (Type   => Periodic,
+ 155                  Name   => E2,
+ 156                  Period => 18000)),
+ 157         Internal_Events => (
+ 158                 (Type   => regular,
+ 159                  name   => O2,
+ 160                  Timing_Requirements => (
+ 161                          Type             => Hard_Global_Deadline,
+ 162                          Deadline         => 18000,
+ 163                          referenced_event => E2))),
+ 164         Event_Handlers => (
+ 165                 (Type                => Activity,
+ 166                  Input_Event         => E2,
+ 167                  Output_Event        => O2,
+ 168                  Activity_Operation  => C2,
+ 169                  Activity_Server     => SC2)));
+ 170 Transaction (
+ 171         Type    => Regular,
+ 172         Name    => T3,
+ 173         External_Events => (
+ 174                 (Type   => Periodic,
+ 175                  Name   => E3,
+ 176                  Period => 27000)),
+ 177         Internal_Events => (
+ 178                 (Type   => regular,
+ 179                  name   => O3,
+ 180                  Timing_Requirements => (
+ 181                          Type             => Hard_Global_Deadline,
+ 182                          Deadline         => 27000,
+ 183                          referenced_event => E3))),
+ 184         Event_Handlers => (
+ 185                 (Type                => Activity,
+ 186                  Input_Event         => E3,
+ 187                  Output_Event        => O3,
+ 188                  Activity_Operation  => C3,
+ 189                  Activity_Server     => SC3)));
+ 190 Transaction (
+ 191         Type    => Regular,
+ 192         Name    => T4,
+ 193         External_Events => (
+ 194                 (Type   => Periodic,
+ 195                  Name   => E4,
+ 196                  Period => 27000)),
+ 197         Internal_Events => (
+ 198                 (Type   => regular,
+ 199                  name   => O4,
+ 200                  Timing_Requirements => (
+ 201                          Type             => Hard_Global_Deadline,
+ 202                          Deadline         => 27000,
+ 203                          referenced_event => E4))),
+ 204         Event_Handlers => (
+ 205                 (Type                => Activity,
+ 206                  Input_Event         => E4,
+ 207                  Output_Event        => O4,
+ 208                  Activity_Operation  => C4,
+ 209                  Activity_Server     => SC4)));
+ 210 Transaction (
+ 211         Type    => Regular,
+ 212         Name    => T5,
+ 213         External_Events => (
+ 214                 (Type   => Periodic,
+ 215                  Name   => E5,
+ 216                  Period => 33000)),
+ 217         Internal_Events => (
+ 218                 (Type   => regular,
+ 219                  name   => O5,
+ 220                  Timing_Requirements => (
+ 221                          Type             => Hard_Global_Deadline,
+ 222                          Deadline         => 33000,
+ 223                          referenced_event => E5))),
+ 224         Event_Handlers => (
+ 225                 (Type                => Activity,
+ 226                  Input_Event         => E5,
+ 227                  Output_Event        => O5,
+ 228                  Activity_Operation  => C5,
+ 229                  Activity_Server     => SC5)));
+ 230 Transaction (
+ 231         Type    => Regular,
+ 232         Name    => T6,
+ 233         External_Events => (
+ 234                 (Type   => Periodic,
+ 235                  Name   => E6,
+ 236                  Period => 37000)),
+ 237         Internal_Events => (
+ 238                 (Type   => regular,
+ 239                  name   => O6,
+ 240                  Timing_Requirements => (
+ 241                          Type             => Hard_Global_Deadline,
+ 242                          Deadline         => 37000,
+ 243                          referenced_event => E6))),
+ 244         Event_Handlers => (
+ 245                 (Type                => Activity,
+ 246                  Input_Event         => E6,
+ 247                  Output_Event        => O6,
+ 248                  Activity_Operation  => C6,
+ 249                  Activity_Server     => SC6)));
+ 250 Transaction (
+ 251         Type    => Regular,
+ 252         Name    => T7,
+ 253         External_Events => (
+ 254                 (Type   => Periodic,
+ 255                  Name   => E7,
+ 256                  Period => 43000)),
+ 257         Internal_Events => (
+ 258                 (Type   => regular,
+ 259                  name   => O7,
+ 260                  Timing_Requirements => (
+ 261                          Type             => Hard_Global_Deadline,
+ 262                          Deadline         => 43000,
+ 263                          referenced_event => E7))),
+ 264         Event_Handlers => (
+ 265                 (Type                => Activity,
+ 266                  Input_Event         => E7,
+ 267                  Output_Event        => O7,
+ 268                  Activity_Operation  => C7,
+ 269                  Activity_Server     => SC7)));
+ 270 Transaction (
+ 271         Type    => Regular,
+ 272         Name    => T8,
+ 273         External_Events => (
+ 274                 (Type   => Periodic,
+ 275                  Name   => E8,
+ 276                  Period => 49000)),
+ 277         Internal_Events => (
+ 278                 (Type   => regular,
+ 279                  name   => O8,
+ 280                  Timing_Requirements => (
+ 281                          Type             => Hard_Global_Deadline,
+ 282                          Deadline         => 49000,
+ 283                          referenced_event => E8))),
+ 284         Event_Handlers => (
+ 285                 (Type                => Activity,
+ 286                  Input_Event         => E8,
+ 287                  Output_Event        => O8,
+ 288                  Activity_Operation  => C8,
+ 289                  Activity_Server     => SC8)));
+ 290 Transaction (
+ 291         Type    => Regular,
+ 292         Name    => T9,
+ 293         External_Events => (
+ 294                 (Type   => Periodic,
+ 295                  Name   => E9,
+ 296                  Period => 87000)),
+ 297         Internal_Events => (
+ 298                 (Type   => regular,
+ 299                  name   => O9,
+ 300                  Timing_Requirements => (
+ 301                          Type             => Hard_Global_Deadline,
+ 302                          Deadline         => 87000,
+ 303                          referenced_event => E9))),
+ 304         Event_Handlers => (
+ 305                 (Type                => Activity,
+ 306                  Input_Event         => E9,
+ 307                  Output_Event        => O9,
+ 308                  Activity_Operation  => C9,
+ 309                  Activity_Server     => SC9)));
+ 310 Transaction (
+ 311         Type    => Regular,
+ 312         Name    => T10,
+ 313         External_Events => (
+ 314                 (Type   => Periodic,
+ 315                  Name   => E10,
+ 316                  Period => 90000)),
+ 317         Internal_Events => (
+ 318                 (Type   => regular,
+ 319                  name   => O10,
+ 320                  Timing_Requirements => (
+ 321                          Type             => Hard_Global_Deadline,
+ 322                          Deadline         => 90000,
+ 323                          referenced_event => E10))),
+ 324         Event_Handlers => (
+ 325                 (Type                => Activity,
+ 326                  Input_Event         => E10,
+ 327                  Output_Event        => O10,
+ 328                  Activity_Operation  => C10,
+ 329                  Activity_Server     => SC10)));
+

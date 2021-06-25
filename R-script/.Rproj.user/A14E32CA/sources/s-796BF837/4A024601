@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1588585477128.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3656317697",
+    "id" : "4A024601",
+    "lastKnownWriteTime" : 1588600020,
+    "last_content_update" : 1588600020402,
+    "path" : "C:/Users/pdila/Desktop/comparison-system-FPS-EDF-master/R-script/semi_full_harmonic.R",
+    "project_path" : "semi_full_harmonic.R",
+    "properties" : {
+        "cursorPosition" : "11,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

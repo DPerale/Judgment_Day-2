@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1588073418866.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "C66AA5CB",
+    "lastKnownWriteTime" : 1588585447,
+    "last_content_update" : 1588585447603,
+    "path" : "C:/Users/pdila/Desktop/comparison-system-FPS-EDF-master/R-script/U90_113400000_armonic.R",
+    "project_path" : "U90_113400000_armonic.R",
+    "properties" : {
+        "cursorPosition" : "8,3",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1588066279737.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3475100398",
+    "id" : "65C421C6",
+    "lastKnownWriteTime" : 1588857357,
+    "last_content_update" : 1588857357594,
+    "path" : "C:/Users/pdila/Desktop/comparison-system-FPS-EDF-master/R-script/Buttazzo-First-Preemptions.R",
+    "project_path" : "Buttazzo-First-Preemptions.R",
+    "properties" : {
+        "cursorPosition" : "0,0",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

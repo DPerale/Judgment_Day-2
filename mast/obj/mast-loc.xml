@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<Locations >
+  <Project>
+    <vfs_file>/home/aquox/Scrivania/Arm/mast/mast.gpr</vfs_file>
+    <file_marker column=" 22" line=" 488" >
+      <vfs_project>/home/aquox/Scrivania/Arm/mast/mast.gpr</vfs_project>
+      <vfs_file>/home/aquox/Scrivania/Arm/mast/mast_analysis/mast-edf_tools.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/aquox/Scrivania/Arm/mast/mast.gpr</vfs_project>
+      <vfs_file>/home/aquox/Scrivania/Arm/mast/mast_analysis/mast-linear_analysis_tools.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 30" line=" 49" >
+      <vfs_project>/home/aquox/Scrivania/Arm/mast/mast.gpr</vfs_project>
+      <vfs_file>/home/aquox/Scrivania/Arm/mast/mast_analysis/mast-tools.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 558" >
+      <vfs_project>/home/aquox/Scrivania/Arm/mast/mast.gpr</vfs_project>
+      <vfs_file>/home/aquox/Scrivania/Arm/mast/mast_analysis/mast-tools.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 18" line=" 33" >
+      <vfs_project>/home/aquox/Scrivania/Arm/mast/mast.gpr</vfs_project>
+      <vfs_file>/home/aquox/Scrivania/Arm/mast/mast_analysis/mast-monoprocessor_tools.ads</vfs_file>
+    </file_marker>
+  </Project>
+</Locations>

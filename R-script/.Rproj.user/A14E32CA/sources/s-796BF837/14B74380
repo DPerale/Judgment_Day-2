@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1588599818237.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3375304860",
+    "id" : "14B74380",
+    "lastKnownWriteTime" : 1588758319,
+    "last_content_update" : 1588758319834,
+    "path" : "C:/Users/pdila/Desktop/comparison-system-FPS-EDF-master/R-script/U_100.R",
+    "project_path" : "U_100.R",
+    "properties" : {
+        "cursorPosition" : "140,22",
+        "scrollLine" : "124",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1588066313237.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4190693239",
+    "id" : "13237C8F",
+    "lastKnownWriteTime" : 1588857357,
+    "last_content_update" : 1588857357636,
+    "path" : "C:/Users/pdila/Desktop/comparison-system-FPS-EDF-master/R-script/Buttazzo-Second-Preemptions.R",
+    "project_path" : "Buttazzo-Second-Preemptions.R",
+    "properties" : {
+        "cursorPosition" : "31,94",
+        "scrollLine" : "1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

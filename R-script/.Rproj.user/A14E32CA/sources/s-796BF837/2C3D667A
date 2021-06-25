@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1588585417288.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2280526138",
+    "id" : "2C3D667A",
+    "lastKnownWriteTime" : 1588857357,
+    "last_content_update" : 1588857357695,
+    "path" : "C:/Users/pdila/Desktop/comparison-system-FPS-EDF-master/R-script/U60_70_80_90_hyper_113400000_with_some_long.R",
+    "project_path" : "U60_70_80_90_hyper_113400000_with_some_long.R",
+    "properties" : {
+        "cursorPosition" : "23,0",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

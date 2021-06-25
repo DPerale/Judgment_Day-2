@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1588073368799.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "9113DC02",
+    "lastKnownWriteTime" : 1587942486,
+    "last_content_update" : 1587942486,
+    "path" : "C:/Users/pdila/Desktop/comparison-system-FPS-EDF-master/R-script/U_90_log_uniform.R",
+    "project_path" : "U_90_log_uniform.R",
+    "properties" : {
+        "cursorPosition" : "18,40",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
