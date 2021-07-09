@@ -81,7 +81,6 @@ def make_adb_file (taskset, hyperPeriod):
     file_adb.write("      Synchronization : Ada.Real_Time.Time_Span;\n")
     file_adb.write("\n")
     file_adb.write("   begin\n")
-    file_adb.write("      -- \n")
     file_adb.write("      Synchronization := Next_Period - Ada.Real_Time.Time_First;\n")
     file_adb.write("      Synchronization := (Synchronization / 180000) * 180000;\n")
     file_adb.write("      Synchronization := Synchronization - Ada.Real_Time.Microseconds (73);\n")
