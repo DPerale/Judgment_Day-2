@@ -81,6 +81,7 @@ def make_adb_file (taskset, hyperPeriod):
     file_adb.write("      Synchronization : Ada.Real_Time.Time_Span;\n")
     file_adb.write("\n")
     file_adb.write("   begin\n")
+    file_adb.write("      -- \n")
     file_adb.write("      Synchronization := Next_Period - Ada.Real_Time.Time_First;\n")
     file_adb.write("      Synchronization := (Synchronization / 180000) * 180000;\n")
     file_adb.write("      Synchronization := Synchronization - Ada.Real_Time.Microseconds (73);\n")
@@ -118,6 +119,7 @@ def make_adb_file (taskset, hyperPeriod):
     file_adb.write("\n")
     file_adb.write("   P1 : Log_Reporter_Task.Log_Reporter (240, -" + str(1)+ ", " + str(int(float(hyperPeriod)/1000)) + ", 0); -- milliseconds\n")
     for task in range (len(taskset)):
+        # calculation of work based on STM32F429-DISCO, you need to recalculate for your microprocessor
         work = int((float(taskset[task][4])-1.62)*180/17)
         file_adb.write("   C"+str(task+1)+" : Cyclic ("+str(len(taskset)-task)+", "
                                                         +str(taskset[task][1])+", "
